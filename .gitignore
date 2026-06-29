@@ -1,46 +1,32 @@
 # Virtual Environment
 venv/
-env/
 
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
 
 # Pytest
 .pytest_cache/
-
-# Playwright
-playwright-report/
 
 # Allure
 allure-results/
 allure-report/
 
-# Test Artifacts
+# Playwright Artifacts
 screenshots/
 videos/
 traces/
-
-# Environment Variables
-.env
 
 # IDE
 .vscode/
 .idea/
 
-# OS Files
+# OS
 .DS_Store
 Thumbs.db
 
 # Logs
 *.log
 
-# Coverage
-.coverage
-htmlcov/
-
-# Build
-dist/
-build/
-*.egg-info/
+# Environment
+.env
