@@ -9,7 +9,6 @@ __pycache__/
 .pytest_cache/
 
 # Allure
-allure-results/
 allure-report/
 
 # Playwright Artifacts
