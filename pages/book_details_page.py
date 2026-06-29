@@ -12,7 +12,7 @@ class BookDetailsPage(BasePage):
     def get_book_price(self):
 
         return self.page.locator(
-            ".price_color"
+            ".product_main .price_color"
         ).inner_text()
 
     def is_book_information_visible(self):

@@ -22,9 +22,11 @@ class HomePage(BasePage):
 
         for i in range(books.count()):
 
-            title = books.nth(i).locator(
-                "h3 a"
-            ).get_attribute("title")
+            title = (
+                books.nth(i)
+                .locator("h3 a")
+                .get_attribute("title")
+            )
 
             titles.append(title)
 
@@ -44,15 +46,19 @@ class HomePage(BasePage):
 
             book = books.nth(i)
 
-            current_title = book.locator(
-                "h3 a"
-            ).get_attribute("title")
+            current_title = (
+                book
+                .locator("h3 a")
+                .get_attribute("title")
+            )
 
             if current_title == title:
 
-                return book.locator(
-                    ".price_color"
-                ).inner_text()
+                return (
+                    book
+                    .locator(".price_color")
+                    .inner_text()
+                )
 
         return None
 
